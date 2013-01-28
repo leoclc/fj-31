@@ -7,7 +7,8 @@ public class Livro implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String nome;
+	
+	transient private String nome;
 	private double preço;
 	public String getNome() {
 		return nome;
